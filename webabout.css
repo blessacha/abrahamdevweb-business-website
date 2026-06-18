@@ -1,0 +1,48 @@
+.WEBAbout2 {
+    background-color: #fff; /* White background for the content */
+    color: #333; /* Dark text for better readability */
+    font-family: Arial, sans-serif; /* Modern font */
+    padding: 20px; /* Padding around the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Maximum width of the content */
+    margin: 40px auto; /* Centering the content */
+}
+
+.WEBAbout2 h1 {
+    text-align: center; /* Centering the title */
+    color: #007bff; /* Giving the title a blue color */
+    margin-bottom: 20px; /* Space after the title */
+}
+
+.WEBAbout2 p {
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.WEBAbout2 ul {
+    list-style: none; /* Removing default list style */
+    padding: 0; /* Removing default padding */
+}
+
+.WEBAbout2 li {
+    background: #f1f1f1; /* Light grey background for list items */
+    margin-bottom: 10px; /* Space between list items */
+    padding: 10px; /* Padding inside list items */
+    border-radius: 4px; /* Rounded corners for list items */
+}
+
+.WEBAbout2 li:before {
+    content: '• '; /* Adding a bullet before list items */
+    color: #007bff; /* Bullet color */
+    font-weight: bold; /* Making the bullet bold */
+    display: inline-block; /* Making the bullet inline with text */
+    width: 1em; /* Width of the bullet */
+    margin-left: -1em; /* Positioning the bullet outside the content */
+}
+
+@media (max-width: 768px) {
+    div {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+}

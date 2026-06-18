@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons for diffent screen and webs  -->
+
+    <title>Join Our Team</title>
+    <link rel="icon" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" sizes="48x48" href="images/android-icon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- css for styling -->
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="devel.css">
+    <link rel="stylesheet" href="workforGod.css">
+    <link rel="stylesheet" href="develop.css">
+    <!-- js for actions -->
+    <script src="JoinOurTeam.js"></script>
+    <link rel="stylesheet" href="webabout.css">
+</head>
+<body>
+    <!-- website logo image-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logoss.png" alt="Your Brand Logo" style="height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+       
+        </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+            <!-- Nav bar -->
+            <div class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="OurService.html">Our Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="About.html">About Us</a>
+            </li>
+          
+            <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="JoinOurTeam.html" style="text-decoration: underline;
+                text-decoration-color: white;
+                text-decoration-thickness: 5px;">Join Our Team</a>
+            </li>
+            
+
+        </div>
+    </nav>
+    <br> <br><br> <br>
+    <!-- Application  intro message -->
+    <div class="welcome-section">
+        <h1>Join Our Web and Mobile App Development Team</h1>
+        <p>We're always looking for talented developers to join our growing team. If you're passionate about coding, designing, and building digital solutions that make a difference, we want to hear from you. Apply today and start creating innovative applications with us!</p>
+        
+    </div>
+    <!-- Application Form -->
+    <div class="recipient-info">
+        <!-- when a user perfom and action with the application for, submit_form.php automatically send the users application to our email.
+        JoinOurTeam.js automatically clears the form and give user a respond. -->
+        <form action="submit_form.php" method="post" enctype="multipart/form-data" id="form3">
+            <label for="title">Title:</label>
+            <select id="title" name="title">
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Mr">Mr.</option>
+                <option value="Miss">Miss</option>
+                <option value="Mrs">Mrs.</option>
+                <option value="Ms">Ms.</option>
+                <option value="Dr">Dr.</option>
+            </select><br><br>
+    
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="age">Date of Birth:</label>
+            <input type="date" id="age" name="age"><br><br>
+    
+            <label for="Gender">Gender</label>
+            <select id="Gender" name="Gender">
+                <option value="">--Select Answer--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br><br>
+    
+            <label for="number">Mobile Number:</label>
+            <input type="tel" id="number" name="number"><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="mail"><br><br>
+    
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required><br><br>
+    
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br><br>
+    
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="2" cols="50"></textarea><br><br>
+    
+            <label for="role">Select Your Desired Role:</label>
+            <select id="role" name="role">
+                <option value="">--Select a Role--</option>
+                <option value="Front-End Developer">Front-End Developer</option>
+                <option value="Back-End Developer">Back-End Developer</option>
+                <option value="Full-Stack Developer">Full-Stack Developer</option>
+                <option value="UI/UX Designer">UI/UX Designer</option>
+                <option value="Mobile App Developer">Mobile App Developer</option>
+                <option value="Project Manager">Project Manager</option>
+                <option value="QA Tester">QA Tester</option>
+                <option value="DevOps Engineer">DevOps Engineer</option>
+                <option value="Others">Others</option>
+            </select><br><br>
+    
+            <label for="previous_experience">Have you worked in this role before?</label>
+            <select id="previous_experience" name="previous_experience">
+                <option value="">--Select an Option--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select><br><br>
+    
+            <label for="motivation">Why Are You Interested in This Role?</label>
+            <textarea id="motivation" name="motivation" rows="4" cols="50" placeholder="Tell us why you're interested in this role"></textarea><br><br>
+    
+            <label for="cover_letter">Cover Letter: Please provide a brief cover letter outlining your experience, skills, and reasons for your interest in the role.</label>
+            <textarea id="cover_letter" name="cover_letter" rows="10" cols="50" placeholder="Write your cover letter here (optional)" maxlength="3000"></textarea><br><br>
+    
+            <label for="cv">Upload Your CV:</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx"><br><br>
+            <br> <br>
+            <input type="submit" value="Submit"><br><br>
+        </form>
+    </div>
+    
+
+<!-- Footer -->
+<footer>
+    <nav></nav>
+    <div class="footer">
+        <div class="footer-row">
+            <div class="footer-column">
+                <h3>Our Service</h3>
+                <a  class="footer-link">Mobile App Development</a>
+                <a  class="footer-link">Web Design</a>
+                <a  class="footer-link">E-Commence site</a>
+                <a  class="footer-link">Digital Martketing</a>
+                <a  class="footer-link">Blockchain (Crypto)</a>
+                <a  class="footer-link">Security</a>
+                <a  class="footer-link">AI</a>
+            </div>
+            <nav></nav>
+            <div class="footer-column">
+                <h3>Location</h3>
+                <a  class="footer-link">England UK</a>
+                <a  class="footer-link">177 Apha RD,</a>
+                <a  class="footer-link">AW6 71L</a>
+              
+                
+            </div>
+            <nav></nav>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                
+                <a  class="footer-link">+44 1234567890</a>
+                <a  class="footer-link">+44 1229191199</a>
+                <a  class="footer-link">info@abrahamdevweb.com</a>
+            
+            </div>
+            <nav></nav>
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+                <a  class="footer-link">Monday: 8AM - 8PM</a>
+                <a  class="footer-link">Tuesday: 8AM - 8PM</a>
+                <a  class="footer-link">Wednesday: 8AM - 8PM</a>
+                <a  class="footer-link">Thursdays: 8AM - 8PM</a>
+                <a  class="footer-link">Friday: 8AM - 8PM</a>
+                <a  class="footer-link">Saturday: 8AM - 8PM</a>
+                <a  class="footer-link">Sunday: 8AM - 8PM</a>
+            </div>
+            
+            
+        </div>
+        <div class="social-media-icons">
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://web.telegram.org/a/" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://en-gb.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/x." target="_blank"><i class="fab fa-x"></i></a>
+                
+            </div>
+            <br><br>
+            <div class="copy-text">
+                &copy;2024 AbrahamDevWeb
+            </div>
+    </div>
+</footer>
+</html>

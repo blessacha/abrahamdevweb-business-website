@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+
+
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 550px;
+    margin: 0 auto; /* Centers the form */
+}
+
+/* Form styling */
+form {
+    display: block;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    /* padding-right: -7%; */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+input[type="date"]{
+    width: 28%;
+    padding: 10px;
+    /* padding-right: -7%; */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #449d44;
+}
+/* Custom Navbar Styles */
+/* Custom Navbar Styles */
+/* Custom Navbar Styles */
+.navbar {
+    background-color: #0099ff !important; /* Blue color for the navbar */
+    color: white; /* White text color */
+}
+
+.navbar-light .navbar-toggler {
+    color: white;
+    border-color: rgba(255,255,255,.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.navbar-brand img {
+    border-radius: 15%; /* If you want the image to be round */
+    max-width: 100%; /* Ensure the image does not overflow */
+    max-height: 100%; /* Ensure the image does not overflow */
+    display: block; /* Remove any default inline spacing */
+}
+
+/* Styles for the navbar toggler when it's expanded */
+.navbar-toggler.collapsed {
+    background-color: white; /* White background color */
+    border-radius: 50%; /* Circle shape */
+    width: 50px; /* Width of the circle */
+    height: 50px; /* Height of the circle */
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+}
+
+/* Ensure the navbar text is bold and white */
+.navbar-light .navbar-nav .nav-link {
+    color: white !important; /* White text color */
+    font-weight: bold; /* Bold font weight */
+}
+
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 4px;
+}
+
+/* Responsive behavior for navbar */
+@media (max-width: 992px) {
+    .navbar-brand {
+        flex-grow: 1;
+        color: white; /* White text color for the brand */
+    }
+    .navbar-toggler {
+        border: none;
+        position: absolute;
+        right: 0;
+        padding-right: 15px;
+        background-color: transparent; /* Transparent background */
+    }
+}
+
+
+/* for header underline */
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 5px;
+    /* padding: 0.1px; */
+}
+
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .form-container,
+    form {
+        width: 100%; /* Full width on mobile */
+        margin: 0;
+        border-radius: 0;
+        padding: 0 15px; /* Add some padding */
+        box-sizing: border-box; /* Include padding in width */
+    }
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4; /* or any other color that matches your design */
+    color: #333; /* dark text color for readability */
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem; /* large font size for heading */
+    margin-bottom: 20px;
+    color: #0099ff; /* or any other color that matches your design */
+}
+
+.welcome-section p {
+    font-size: 1.25rem; /* comfortable reading size for text */
+    margin-bottom: 30px;
+    line-height: 1.6; /* line height for better readability */
+    max-width: 800px; /* to prevent the line from being too long on large screens */
+    margin-left: auto; /* center the paragraph */
+    margin-right: auto;
+}
+
+.apply-button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #0099ff; /* button color */
+    color: white; /* text color */
+    text-decoration: none; /* remove underline from links */
+    border-radius: 5px; /* rounded corners for the button */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* smooth transition for hover effect */
+}
+
+.apply-button:hover {
+    background-color: #0056b3; /* slightly darker shade on hover */
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Adjustments for navbar-nav */
+.navbar-nav {
+    display: flex; /* Align the items with flexbox */
+    justify-content: center; /* Center the items horizontally */
+    width: 100%; /* Ensure the navbar-nav takes up the full width */
+    padding-left: 0; /* Remove default padding */
+    margin-right: auto; /* Push everything to the center */
+    margin-left: auto; /* Push everything to the center */
+}
+
+/* Spacing between nav items */
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Add space between the nav items */
+}
+
+/* Ensure the navbar does not collapse too soon */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+}
+
+/* Further adjustments may be needed based on the actual content and design */

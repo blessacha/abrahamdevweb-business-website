@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Screen icons -->
+    <title>About</title>
+    <link rel="icon" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" sizes="48x48" href="images/android-icon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- css for styling -->
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="webabout.css">
+    <link rel="stylesheet" href="develop.css">
+    <script src="Blet.js"></script>
+    
+</head>
+<body>
+    <!-- website logo image -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logoss.png" alt="Your Brand Logo" style="height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+       
+        </button>
+        <!-- nav bar -->
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            <div class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="OurService.html">Our Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html" style="text-decoration: underline;
+                    text-decoration-color: white;
+                    text-decoration-thickness: 5px;">About Us</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html" >Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="JoinOurTeam.html">Join Our Team</a>
+                </li>
+            
+
+        </div>
+    </nav>
+    <br> <br><br> <br>
+    <!-- Website about -->
+    <div class="WEBAbout2">
+        <h1>Welcome to AbrahamDevWeb</h1>
+        
+        <p>Your go-to partner for a powerful online presence. Our team is dedicated to bringing your digital dreams to life, creating bespoke websites, seamless mobile applications, and impactful digital marketing strategies.</p>
+        
+        <p>We understand the importance of a strong online presence, which is why we offer comprehensive web development services, tailored to your specific needs. Whether you need a sophisticated e-commerce platform or a simple informational website, our experts are ready to help you succeed.</p>
+        
+        <p>Our marketing team specializes in boosting your visibility on social media, ensuring that your brand stands out on platforms like TikTok, Facebook, Instagram, YouTube, and Telegram. With our top-notch SEO services, we'll help your website climb the search engine rankings, driving traffic and growth.</p>
+        
+        <p>At AbrahamDevWeb, we pride ourselves on speed and efficiency without sacrificing quality. We work on both iOS and Android platforms, using a variety of programming languages to deliver the best results for our clients. Our aim is your complete satisfaction, offering exceptional services at competitive rates.</p>
+        
+        <p>We are open from Monday to Saturday and dedicate ourselves fully to each project, ensuring timely and satisfactory delivery. In addition to development, we provide web and mobile app maintenance to keep your operations smooth and up-to-date.</p>
+        
+        <p>Our tech stack includes, but is not limited to:</p>
+        <ul>
+            <li>Design Tools: Microsoft Office, Draw.io, Figma, Canva, Photoshop, Illustrator</li>
+            <li>Frontend Technologies: HTML, CSS, React JS, Angular JS, jQuery, VUE JS</li>
+            <li>Backend Development: Python, PHP, Node JS, JAVA</li>
+            <li>Database Management: MongoDB, MySQL, PostgreSQL, Firebase</li>
+            <li>Cloud Services: Google Cloud, Amazon Web Services, Microsoft Azure</li>
+            <li>CMS: WordPress, Drupal, Magento, Joomla</li>
+            <li>Payment Gateway Integration: Stripe, Paypal, Square, Braintree</li>
+        </ul>
+        
+        <p>Choose AbrahamDevWeb for a reliable, client-focused approach to your web and mobile development needs. Connect with us today, and let's embark on a journey to success together!</p>
+    </div>
+    <br> <br>
+    
+
+    <div class="contactform">
+        <hr>
+        <!-- Contact us form -->
+        <p>Please fill out this form to get in touch with us, and we will contact you soon.</p>
+        <!-- action from form will be sent to send_mail.php and this will process the email, -->
+        <!-- meanwhile js will clear the form afetr email is sent or error with instructions -->
+        <form action="send_email.php" method="post" id="form1">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <select id="title" name="title">
+                    <option value="Prefer not to say">Prefer not to say.</option>
+                    <option value="Mr">Mr.</option>
+                    <option value="Miss">Miss.</option>
+                    <option value="Mrs">Mrs.</option>
+                    <option value="Ms">Ms.</option>
+                    <option value="Dr">Dr.</option>
+                    <option value="Prof">Prof.</option>
+                    <option value="Rev">Rev.</option>
+                    <option value="Hon">Hon.</option>
+                    
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel">  
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" autocomplete="email">
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <button type="submit" class="submitbutton">Submit</button>
+        </form>
+    </div>
+    <br> <br> <br> <br>
+</body>
+<!-- Footer -->
+<footer>
+    <nav></nav>
+    <div class="footer">
+        <div class="footer-row">
+            <div class="footer-column">
+                <h3>Our Service</h3>
+                <a  class="footer-link">Mobile App Development</a>
+                <a  class="footer-link">Web Design</a>
+                <a  class="footer-link">E-Commence site</a>
+                <a  class="footer-link">Digital Martketing</a>
+                <a  class="footer-link">Blockchain (Crypto)</a>
+                <a  class="footer-link">Security</a>
+                <a  class="footer-link">AI</a>
+            </div>
+            <nav></nav>
+            <div class="footer-column">
+                <h3>Location</h3>
+                <a  class="footer-link">England UK</a>
+                <a  class="footer-link">177 Apha RD,</a>
+                <a  class="footer-link">AW6 71L</a>
+
+            </div>
+            <nav></nav>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                
+                <a  class="footer-link">+44 1234567890</a>
+                <a  class="footer-link">+44 1229191199</a>
+                <a  class="footer-link">info@abrahamdevweb.com</a>
+            
+            </div>
+            <nav></nav>
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+                <a  class="footer-link">Monday: 8AM - 8PM</a>
+                <a  class="footer-link">Tuesday: 8AM - 8PM</a>
+                <a  class="footer-link">Wednesday: 8AM - 8PM</a>
+                <a  class="footer-link">Thursdays: 8AM - 8PM</a>
+                <a  class="footer-link">Friday: 8AM - 8PM</a>
+                <a  class="footer-link">Saturday: 8AM - 8PM</a>
+                <a  class="footer-link">Sunday: 8AM - 8PM</a>
+            </div>
+            
+            
+        </div>
+        <div class="social-media-icons">
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://web.telegram.org/a/" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://en-gb.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/x." target="_blank"><i class="fab fa-x"></i></a>
+                
+            </div>
+            <br><br>
+            <div class="copy-text">
+                &copy;2024 AbrahamDevWeb
+            </div>
+    </div>
+</footer>
+</html>

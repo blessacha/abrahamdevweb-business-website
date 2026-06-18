@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Custom Navbar Styles */
+.navbar {
+    background-color: #007bff !important; /* Blue color for the navbar */
+    color: white; /* White text color */
+}
+
+.navbar-light .navbar-toggler {
+    color: white;
+    border-color: rgba(255,255,255,.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Custom Navbar Brand Styles */
+.navbar-brand {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    width: 55px; /* Width of the circle */
+    height: 55px; /* Height of the circle */
+    border-radius: 50%; /* Make it round */
+    background-color: white; /* White background */
+    padding: 0px; /* Adjust padding as needed */
+}
+
+.navbar-brand img {
+    border-radius: 15%; /* If you want the image to be round */
+    max-width: 100%; /* Ensure the image does not overflow */
+    max-height: 100%; /* Ensure the image does not overflow */
+    display: block; /* Remove any default inline spacing */
+}
+/* Styles for the navbar toggler when it's expanded */
+/* Ensure the navbar text is bold and white */
+.navbar-light .navbar-nav .nav-link {
+    color: white !important; /* White text color */
+    font-weight: bold; /* Bold font weight */
+}
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 5px;
+}
+/* Responsive behavior for navbar */
+/* for header underline */
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 5px;
+    /* padding: 0.1px; */
+}
+
+/* Adjustments for navbar-nav */
+.navbar-nav {
+    display: flex; /* Align the items with flexbox */
+    justify-content: center; /* Center the items horizontally */
+    width: 100%; /* Ensure the navbar-nav takes up the full width */
+    padding-left: 0; /* Remove default padding */
+    margin-right: auto; /* Push everything to the center */
+    margin-left: auto; /* Push everything to the center */
+}
+
+/* Spacing between nav items */
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Add space between the nav items */
+}
+
+/* Ensure the navbar does not collapse too soon */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+}
+
+/* Further adjustments may be needed based on the actual content and design */
+
+@media (max-width: 992px) {
+    .navbar-brand {
+
+        color: white; /* White text color for the brand */
+    }
+    .navbar-toggler {
+        border: none;
+        position: absolute;
+        right: 0;
+        padding-right: 15px;
+        background-color: transparent; /* Transparent background */
+    }
+}

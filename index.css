@@ -1,0 +1,503 @@
+/* body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+
+}
+/* welcome screen */
+.where_develop_powerfull_app {
+    background-color: #007bff; /* Blue background */
+    color: white;             /* White text color */
+    padding: 90px;            /* Padding around the content */
+    border-radius: px;       /* Rounded corners */
+    text-align: center;       /* Center text alignment */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+.where_develop_powerfull_app h1 {
+    margin-top: 0;           /* Remove top margin of the header */
+    font-size: 24px;         /* Font size for the header */
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.where_develop_powerfull_app p {
+    font-size: 16px;         /* Font size for the paragraph */
+}
+
+.where_develop_powerfull_app button {
+    background-color: white; /* White background for the button */
+    color: #007bff;          /* Blue text color for the button */
+    border: none;            /* Remove border */
+    padding: 10px 20px;      /* Padding inside the button */
+    border-radius: 4px;      /* Rounded corners for the button */
+    font-size: 16px;         /* Font size for the button */
+    cursor: pointer;         /* Change cursor to pointer on hover */
+    margin-top: 10px;        /* Margin above the button */
+}
+
+.where_develop_powerfull_app button:hover {
+    background-color: #537ba7; /* Darker blue background on hover */
+}
+
+.where_develop_powerfull_app a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit;        /* Inherit color from parent */
+}
+/* Our Services Section Styling */
+.our-services {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.our-services h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    width: calc(25% - 20px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    height: 110px;
+    width: 110px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.schedule-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.schedule-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.schedule-btn:hover {
+    background-color: #4d749e;
+}
+
+@media (max-width: 992px) {
+    .service-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+    }
+}
+
+.free_consultant {
+    position: relative;
+    text-align: left;
+    color: white;
+    /*  <!--https://www.bing.com/images/search?view=detailV2&insightstoken=bcid_qKpPMurDHAQHkl0XSWSj7rwGj7ky.....xU*ccid_qk8y6sMc&form=ANCMS1&iss=SBIUPLOADGET&selectedindex=0&id=-1561748337&ccid=qk8y6sMc&exph=400&expw=600&vt=2&sim=11-->
+         */
+    background-image: url('images/dev1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    
+    height: 934px; /* Increased height */
+  }
+
+  .free_consultant h1, .free_consultant p, .free_consultant button {
+    margin-left: 20px;
+  }
+
+  .free_consultant h1 {
+    font-size: 48px; /* Large text for desktop */
+    margin-top: 552px;
+  }
+
+  .free_consultant p {
+    font-size: 24px; /* Large text for desktop */
+  }
+
+  .free_consultant button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px; /* Larger button text */
+    cursor: pointer;
+    border-radius: 122px;
+  }
+
+  .free_consultant button a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .free_consultant {
+      height: 600px; /* Adjust height for mobile */
+      padding: 1px;
+      
+    }
+    .free_consultant h1 {
+      font-size: 24px; /* Smaller text for mobile */
+     
+      margin-top: 312px;
+    }
+    .free_consultant p {
+      font-size: 18px; /* Smaller text for mobile */
+    }
+    .free_consultant button {
+      font-size: 16px; /* Smaller button text for mobile */
+      padding: 10px 20px;
+    }
+  }
+/* stages settings */
+.stagesofapp {
+    text-align: center;
+    background-color: #f9f9f9; /* Change to match your desired background color */
+    padding: 40px 20px;
+}
+
+.stagesofapp h2 {
+    color: #333; /* Dark text color for the title */
+    margin-bottom: 30px;
+}
+
+.stages-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stage-card {
+    flex: 1; /* Make the cards flexible in size */
+    min-width: 200px; /* Minimum width of each card */
+    max-width: calc(20% - 40px); /* Maximum width of each card, accounting for margin */
+    background: #ffffff; /* White background for the cards */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow effect */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px; /* Margin around cards */
+}
+
+.stage-card img {
+    width: 110px; /* Adjust as needed */
+    width: 110px;
+    margin-bottom: 20px;
+}
+
+.stage-card h3 {
+    font-size: 20px;
+    color: #007bff; /* Blue color for the headers */
+    margin-bottom: 10px;
+}
+
+.stage-card p {
+    font-size: 16px;
+    color: #666; /* Lighter text color */
+    line-height: 1.6;
+}
+
+.feedback-btn {
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text for the button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px; /* Margin above the button */
+    display: inline-block; /* Center the button */
+}
+
+.feedback-btn a {
+    color: white; /* White text for the link */
+    text-decoration: none; /* No underline for the link */
+}
+
+.feedback-btn:hover {
+    background-color: #486a8f; /* Darker blue on hover */
+}
+
+@media (max-width: 992px) {
+    .stages-container {
+        justify-content: center;
+    }
+
+    .stage-card {
+        max-width: calc(33.333% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .stage-card {
+        max-width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .stage-card {
+        max-width: 100%;
+    }
+}
+.tech_stack_we_use {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.tech_stack_we_use h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.tech-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tech-category {
+    flex: 0 1 calc(33.333% - 20px); /* 3 per row, minus the gap */
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tech-category h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.tech-category hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.tech-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tech-category li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tech-category li img {
+    width: 60px; /* Adjust as needed */
+    height: 130px; 
+    margin-right: 25px;
+    margin-left: 70px;
+}
+
+.contact-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.contact-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background-color: #5c81aa;
+}
+
+@media (max-width: 992px) {
+    .tech-category {
+        flex: 0 1 calc(50% - 20px); /* 2 per row on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .tech-category {
+        flex: 0 1 100%; /* 1 per row on even smaller screens */
+    }
+}
+.at_the_end_of_project {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.at_the_end_of_project h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.payment-option {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    animation: bounce 14s ease infinite;
+}
+
+.payment-option:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.payment-option img {
+    height: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+i{
+    font-size: 50px;
+    padding-right: 12px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.at_the_end_of_project p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.contactform {
+    max-width: 400px; /* Sets the max width of the form to make it smaller */
+    margin: 0 auto; /* Centers the form in the page */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left; /* Aligns text to the left */
+}
+
+.contactform h2 {
+    text-align: center; /* Center the title */
+    color: #333; /* Dark gray color for the text */
+    margin-bottom: 10px;
+}
+
+.contactform p {
+    text-align: center; /* Center the paragraph */
+    color: #666; /* Lighter text color */
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+.form-group label {
+    display: block; /* Makes the label a block element to position it above the input field */
+    margin-bottom: 5px;
+    color: #333; /* Dark gray color for the label text */
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for the fields */
+}
+
+.form-group textarea {
+    resize: vertical; /* Allows the textarea to be resized vertically */
+}
+
+.submitbutton {
+    width: 100%; /* Full width button */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Changes the cursor on hover */
+    margin-top: 10px; /* Space above the button */
+}
+
+button:hover {
+    background-color: #5c81aa; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contactform {
+        padding: 10px;
+    }
+}
+
+.footer-column h3{
+    color: #abc4de;
+    font-size: 24px;
+    
+}

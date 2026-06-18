@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons for diffrent screen -->
+    <title>Contact Us</title>
+    <link rel="icon" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" sizes="48x48" href="images/android-icon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery and Bootstrap Bundle (includes Popper)-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="webabout.css">
+    <link rel="stylesheet" href="develop.css">
+    <script src="Blet.js"></script>
+</head>
+<body>
+    <!-- website logo image-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logoss.png" alt="Your Brand Logo" style="height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+       <!-- Nav bar -->
+        </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            <div class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="OurService.html">Our Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html" >About Us</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html"  style="text-decoration: underline;
+                    text-decoration-color: white;
+                    text-decoration-thickness: 5px;">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="JoinOurTeam.html">Join Our Team</a>
+                </li>
+            
+
+        </div>
+    </nav>
+    <br> <br><br> <br>
+    <header>
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for any inquiries, feedback, or support requests.</p>
+    </header>
+    <div class="contactform">
+      
+       <!-- Contact us form -->
+        <p>Please fill out this form to get in touch with us, and we will contact you soon.</p>
+        <hr>
+            <!-- action from form will be sent to send_mail.php and this will process the email, -->
+        <!-- meanwhile Blet.js will clear the form afetr email is sent or error with instructions -->
+        <form action="send_email.php" method="post" id="form1">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <select id="title" name="title">
+                    <option value="Prefer not to say">Prefer not to say.</option>
+                    <option value="Mr">Mr.</option>
+                    <option value="Miss">Miss.</option>
+                    <option value="Mrs">Mrs.</option>
+                    <option value="Ms">Ms.</option>
+                    <option value="Dr">Dr.</option>
+                    <option value="Prof">Prof.</option>
+                    <option value="Rev">Rev.</option>
+                    <option value="Hon">Hon.</option>
+                    
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel">  
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" autocomplete="email">
+            </div>
+            <div class="form-group">
+                <label for="Reason">Purpose of Contact:</label>
+                <input type="text" id="Reason" name="Reason" required placeholder="Please Specify">
+            </div>
+            <div class="form-group">
+                <label for="comments">Message:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <button type="submit" class="submitbutton">Submit</button>
+        </form>
+    </div>
+    <br> <br> <br> <br>
+</body>
+<!-- Footer -->
+<footer>
+    <nav></nav>
+    <div class="footer">
+        <div class="footer-row">
+            <div class="footer-column">
+                <h3>Our Service</h3>
+                <a  class="footer-link">Mobile App Development</a>
+                <a  class="footer-link">Web Design</a>
+                <a  class="footer-link">E-Commence site</a>
+                <a  class="footer-link">Digital Martketing</a>
+                <a  class="footer-link">Blockchain (Crypto)</a>
+                <a  class="footer-link">Security</a>
+                <a  class="footer-link">AI</a>
+            </div>
+            <nav></nav>
+            <div class="footer-column">
+                <h3>Location</h3>
+                <a  class="footer-link">England UK</a>
+                <a  class="footer-link">177 Apha RD,</a>
+                <a  class="footer-link">AW6 71L</a>
+              
+                
+            </div>
+            <nav></nav>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                
+                <a  class="footer-link">+44 1234567890</a>
+                <a  class="footer-link">+44 1229191199</a>
+                <a  class="footer-link">info@abrahamdevweb.com</a>
+            
+            </div>
+            <nav></nav>
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+                <a  class="footer-link">Monday: 8AM - 8PM</a>
+                <a  class="footer-link">Tuesday: 8AM - 8PM</a>
+                <a  class="footer-link">Wednesday: 8AM - 8PM</a>
+                <a  class="footer-link">Thursdays: 8AM - 8PM</a>
+                <a  class="footer-link">Friday: 8AM - 8PM</a>
+                <a  class="footer-link">Saturday: 8AM - 8PM</a>
+                <a  class="footer-link">Sunday: 8AM - 8PM</a>
+            </div>
+            
+            
+        </div>
+        <div class="social-media-icons">
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://web.telegram.org/a/" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://en-gb.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/x." target="_blank"><i class="fab fa-x"></i></a>
+                
+            </div>
+            <br><br>
+            <div class="copy-text">
+                &copy;2024 AbrahamDevWeb
+            </div>
+    </div>
+</footer>
+</html>

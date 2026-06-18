@@ -1,0 +1,89 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* Main Content Styles */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto; /* Center content horizontally on desktop */
+    padding: 2rem;
+}
+
+/* Services Section Styles */
+.services {
+    margin-top: 2rem;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.service img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-info {
+    flex: 1;
+}
+
+.service h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.service p {
+    font-size: 1.1rem;
+}
+
+
+
+    /* Define the style for the headings */
+    h2, h3 {
+        position: relative; /* Make sure the underline can be positioned relative to the heading */
+        display: inline-block; /* Ensure the underline doesn't stretch to full width */
+    }
+
+    /* Define the style for the underlines */
+    h2::after, h3::after {
+        content: ''; /* Add content for the underline */
+        position: absolute; /* Position the underline absolutely */
+        width: 50%; /* Set the width of the underline */
+        height: 2px; /* Set the height of the underline */
+        background-color: #000; /* Set the color of the underline */
+        bottom: 0; /* Position the underline at the bottom of the heading */
+        left: 25%; /* Center the underline horizontally */
+        
+        transition: width 0.3s ease-in-out; /* Add transition effect for hover */
+    }
+
+    /* Define the hover effect for the underlines */
+    h2:hover::after, h3:hover::after {
+        width: 93%; /* Increase the width of the underline on hover */
+        left: 3%;
+        
+    }
+
